@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  post_build:
+    commands:
+      - mkdir -p build/scripts
+      - cp appspec.yml build/
+      - cp -r scripts build/scripts/
+      - cp -r controller build/
+      - cp -r db build/
+      - cp -r json build/
+      - cp -r middlewares build/
+      - cp -r repository build/
+      - cp -r routes build/
+      - cp -r services build/
+      - cp -r validations build/
+      - cp .gitignore build/
+      - cp app.js build/
+      - cp package-lock.json build/
+      - cp package.json build/
+      - cp README.md build/
+      - cp system.config.js build/
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
