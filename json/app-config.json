@@ -1,0 +1,4 @@
+{
+    "DB_SCHEMA":"public",
+    "COMPONENT_NAME":"auth-svc"
+}
