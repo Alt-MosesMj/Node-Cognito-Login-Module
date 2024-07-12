@@ -13,10 +13,10 @@ const sequelize = new Sequelize("","","", {
 });
 
 sequelize.beforeConnect(async (config) => {
- config.host  = "qikcollectdb.cluster-cri40igsylum.us-east-1.rds.amazonaws.com";
- config.username = "qikcollectadmin";
- config.password =  "Chennai211187";
- config.database = "postgres";
+ config.host  = "";
+ config.username = "";
+ config.password =  "";
+ config.database = "";
 });
 
 
